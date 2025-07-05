@@ -1,0 +1,21 @@
+Time Complexity Explanation
+
+Best Case:  
+    The key is found at the first index, so only one comparison is made.  
+    -> Time Complexity: O(1)
+
+Average Case:  
+    The key is located somewhere in the middle of the array. On average, it takes n/2 comparisons.  
+    -> Time Complexity: O(n/2) ≈ O(n)
+
+Worst Case:  
+    The key is either at the last position or not present at all, requiring a full scan of the list.  
+    -> Time Complexity: O(n)
+
+Observations:
+
+- The best case time remains nearly constant regardless of input size.
+- Average and worst case times increase linearly with input size.
+- This matches theoretical expectations since linear search has linear time complexity in average and worst cases.
+- Linear search is suitable for small datasets or unsorted data, but inefficient for large datasets.  
+    For faster search in large datasets, use binary search (with sorted data) or hashing.
