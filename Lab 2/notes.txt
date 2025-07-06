@@ -1,0 +1,22 @@
+Time Complexity Explanation:
+Best Case:  
+    Only 1 comparison is made when the element is at index 0.  
+    → Theoretical: O(1)
+
+Average Case:  
+    On average, the key is found after n/2 comparisons.  
+    → Theoretical: O(n/2) ≈ O(n)
+
+Worst Case:  
+    Either key is at last index or not present — entire list is scanned.  
+    → Theoretical: O(n)
+
+Observations:
+- Best case always has 1 comparison.
+- Average comparisons grow linearly as input size increases.
+- Worst case also grows linearly, matching the size of the list.
+- The experiment confirms that the linear search has:
+    - Best Case: O(1)
+    - Average Case: O(n/2)
+    - Worst Case: O(n)
+- For large data, linear search becomes inefficient.
